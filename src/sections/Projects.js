@@ -70,7 +70,7 @@ const Project = ({ name, children }) => {
 
 const Projects = () => {
   return (
-    <Section.Container id='產品特色' Background={Background} >
+    <Section.Container id='projects' Background={Background} >
       <Section.Header name='產品特色' icon='💻' label='notebook' />
       <Container fluid>
         <Row>

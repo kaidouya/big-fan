@@ -31,18 +31,8 @@ const Footer = () => (
     <div>
       <Fade left>
         <TextFooter fontSize={[2, 3]}>
-          <span>{`綠捷傳動 Portfolio - Powered by `}</span>
-          <Link href="https://www.gatsbyjs.org/">Gatsby</Link>
-          <span>, </span>
-          <Link href="https://www.contentful.com/" mr={1}>
-            Contentful
-          </Link>
-          <span> and </span>
-          <Link href="https://www.netlify.com/" mr={1}>
-            Netlify
-          </Link>
-          <span role="img" aria-label="heart">
-            ❤️
+          <span>
+            Copyright © 2020 綠捷傳動股份有限公司. All Rights Reserved.
           </span>
         </TextFooter>
       </Fade>

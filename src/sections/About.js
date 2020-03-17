@@ -66,8 +66,8 @@ const About = () => {
     }
   `);
   return (
-    <Section.Container id="大風機介紹" Background={Background}>
-      <Section.Header name="永磁直驅大風機介紹" icon="💧" label="person" />
+    <Section.Container id="about" Background={Background}>
+      <Section.Header name="永磁直驅大風機" icon="💧" label="person" />
       <Container fluid>
         <Row>
           <Col xs={12} md={8}>
