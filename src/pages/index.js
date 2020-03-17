@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="綠捷傳動" />
     <Header />
     <Landing />
     <About />

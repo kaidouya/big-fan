@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Text, Link, Flex } from 'rebass';
+import { Text, Box, Flex } from 'rebass';
 import Fade from 'react-reveal/Fade';
+import SocialLink from '../components/SocialLink';
+import { socialLinks } from '../text/socoalLinks';
 
 const FooterContainer = styled.footer`
   padding: 16px;
@@ -15,6 +17,9 @@ const FooterContainer = styled.footer`
     justify-content: space-between;
     align-items: center;
     margin: auto;
+  }
+  path{
+    color:${props => props.theme.greenTheme.secondFontColor};
   }
 `;
 
@@ -37,7 +42,13 @@ const Footer = () => (
         </TextFooter>
       </Fade>
       <Flex>
-        <Fade right></Fade>
+        <Fade right>
+          {socialLinks.map(({ id, ...rest }) => (
+            <Box mx={3} fontSize={[5, 6, 6]} key={id}>
+              <SocialLink {...rest} />
+            </Box>
+          ))}
+        </Fade>
       </Flex>
     </div>
   </FooterContainer>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
-import FontAwesomeIcon from 'react-fontawesome';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import { Card } from '../components/Card'

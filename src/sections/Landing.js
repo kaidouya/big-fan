@@ -6,6 +6,7 @@ import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
 import Triangle from '../components/Triangle';
+import { socialLinks } from '../text/socoalLinks';
 
 const Background = () => (
   <div>
@@ -49,37 +50,6 @@ const roles = [
   '節能傳動科技為主軸 📱',
   '多功能驅動器 ✨',
   '永續經營的服務 🔧',
-];
-
-const socialLinks = [
-  {
-    id: 'github',
-    name: 'github',
-    url: '',
-    color: '',
-    fontAwesomeIcon: '',
-  },
-  {
-    id: 'medium',
-    name: 'medium',
-    url: '',
-    color: '',
-    fontAwesomeIcon: '',
-  },
-  {
-    id: 'mail',
-    name: 'mail',
-    url: '',
-    color: '',
-    fontAwesomeIcon: '',
-  },
-  {
-    id: 'twitter',
-    name: 'twitter',
-    url: '',
-    color: '',
-    fontAwesomeIcon: '',
-  },
 ];
 
 const LandingPage = () => (

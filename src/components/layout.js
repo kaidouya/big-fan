@@ -1,29 +1,20 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { ResetStyle, GlobalStyle } from '../Style/globalStyle';
+import { GlobalStyle } from '../Style/globalStyle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/special.css';
 import PropTypes from 'prop-types';
 import { ScrollingProvider } from 'react-scroll-section';
 import config from 'react-reveal/globals';
-import colors from '../../colors';
 import myTheme from '../style/myTheme';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 config({ ssrFadeout: true });
-
-const loadScript = src => {
-  const tag = document.createElement('script');
-  tag.src = src;
-  tag.defer = true;
-
-  document.getElementsByTagName('body')[0].appendChild(tag);
-};
+library.add(fas, fab);
 
 const Layout = ({ children }) => {
-  useEffect(() => {
-    loadScript('https://use.fontawesome.com/fd58d214b9.js');
-  }, []);
-
   return (
     <main>
       <ThemeProvider theme={myTheme}>

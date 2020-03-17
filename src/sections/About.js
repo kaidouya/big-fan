@@ -41,14 +41,6 @@ const PictureConatiner = styled.div`
   }
 `;
 
-const InfoAra = styled.p`
-  line-height: 2em;
-
-  &:first-child {
-    margin-top: 0em;
-  }
-`;
-
 const About = () => {
   const data = useStaticQuery(graphql`
     query {

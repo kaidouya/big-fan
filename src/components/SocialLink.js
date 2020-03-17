@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "rebass"
-import Tippy from "@tippy.js/react"
 import styled from "styled-components"
 import PropTypes from "prop-types"
-import FontAwesomeIcon from "react-fontawesome"
-import "tippy.js/dist/tippy.css" // eslint-disable-line
+import 'react-tippy/dist/tippy.css'
+import { Tooltip } from 'react-tippy';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const IconLink = styled(Link)`
   transition: color 0.5s;
@@ -17,18 +17,25 @@ const IconLink = styled(Link)`
   }
 `
 
-const SocialLink = ({ fontAwesomeIcon, name, url, color }) => (
-  <Tippy content={name} placement="bottom" trigger="mouseenter" arrow={false}>
+const SocialLink = ({ name, url, color, target, prefix, interactive, animation, fontAwesomeIconType }) => (
+  <Tooltip
+    title={name}
+    position="top"
+    trigger="mouseenter"
+    interactive={interactive}
+    animation={animation}
+    arrow="true"
+  >
     <IconLink
       href={url}
-      target="_blank"
+      target={target}
       color={color}
       rel="noreferrer"
       aria-label={name}
     >
-      <FontAwesomeIcon name={fontAwesomeIcon} />
+      <FontAwesomeIcon icon={[prefix, fontAwesomeIconType]} />
     </IconLink>
-  </Tippy>
+  </Tooltip>
 )
 
 SocialLink.propTypes = {

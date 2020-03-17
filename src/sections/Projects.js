@@ -1,12 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Image, Text, Flex, Box } from 'rebass'
-import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade'
 import Section from '../components/Section'
 import { Card } from '../components/Card'
-import SocialLink from '../components/SocialLink'
 import Triangle from '../components/Triangle'
 import { Container, Row, Col } from 'react-bootstrap'
 

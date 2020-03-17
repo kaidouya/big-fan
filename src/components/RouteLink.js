@@ -21,6 +21,7 @@ const getChineseName = name => {
       return '產品特色';
     case 'writing':
       return '詳細資料';
+    default: return;
   }
 };
 const RouteLink = ({ onClick, selected, name }) => (
