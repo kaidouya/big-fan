@@ -1,5 +1,7 @@
 /* 補充bootstrap庫缺少的樣式 */
-.modal-90w {
-  width: 90%;
-  max-width: none !important;
+@media (min-width: 768px) {
+  .modal-90w {
+    width: 90%;
+    max-width: none !important;
+  }
 }
