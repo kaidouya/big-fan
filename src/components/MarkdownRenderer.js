@@ -20,7 +20,7 @@ const StyledLink = styled.a`
     content: "";
     width: 100%;
     height: 3px;
-    background-color: ${props => props.theme.colors.primaryLight};
+    background-color: ${props => props.greenTheme.colors.baseFontColor};
     transition: all 250ms;
   }
 
@@ -58,10 +58,10 @@ const MarkdownLink = ({ href, children }) => {
       {({ onClick }) => <StyledLink onClick={onClick}>{children}</StyledLink>}
     </SectionLink>
   ) : (
-    <StyledLink href={href} target="_blank" rel="noreferrer">
-      {children}
-    </StyledLink>
-  )
+      <StyledLink href={href} target="_blank" rel="noreferrer">
+        {children}
+      </StyledLink>
+    )
 }
 
 MarkdownLink.propTypes = {

@@ -13,21 +13,21 @@ import { Container, Row, Col } from 'react-bootstrap'
 const Background = () => (
   <div>
     <Triangle
-      color='secondaryLight'
+      color='primaryColor'
       height={['80vh', '80vh']}
       width={['100vw', '100vw']}
       invertX
     />
 
     <Triangle
-      color='background'
+      color='tertiaryColor'
       height={['50vh', '20vh']}
       width={['50vw', '50vw']}
       invertX
     />
 
     <Triangle
-      color='primaryDark'
+      color='secondaryColor'
       height={['25vh', '40vh']}
       width={['75vw', '60vw']}
       invertX
@@ -35,7 +35,7 @@ const Background = () => (
     />
 
     <Triangle
-      color='backgroundDark'
+      color='fourColor'
       height={['25vh', '20vh']}
       width={['100vw', '100vw']}
       invertY
@@ -49,9 +49,10 @@ const CustomLabel = styled.div`
     bottom: -1px;
     margin: 0px;
     padding: 10px 10px 10px 20px;
-    background-color: rgb(124, 55, 173);
+    /* background-color: rgb(124, 55, 173); */
+    background:${props => props.theme.greenTheme.tertiaryColor};
     color: white;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 600;
     text-transform: uppercase;
     clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);

@@ -11,21 +11,21 @@ import Img from 'gatsby-image';
 const Background = () => (
   <div>
     <Triangle
-      color="secondaryLight"
+      color="primaryColor"
       height={['50vh', '20vh']}
       width={['49vw', '49vw']}
       invertY
     />
 
     <Triangle
-      color="primaryDark"
+      color="fiveColor"
       height={['20vh', '40vh']}
       width={['75vw', '70vw']}
       invertX
     />
 
     <Triangle
-      color="backgroundDark"
+      color="primaryColor"
       height={['25vh', '20vh']}
       width={['100vw', '100vw']}
     />

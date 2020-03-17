@@ -4,7 +4,7 @@ import LinkAnimated from './LinkAnimated';
 import styled from 'styled-components';
 
 const Box = styled.div`
-  color: #fff;
+  color: ${props => props.theme.greenTheme.secondFontColor};
   font-size: 16px;
   margin: 0px 0px 0px 8px;
   @media screen and (min-width: 40em) {

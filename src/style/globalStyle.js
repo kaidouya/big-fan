@@ -87,4 +87,19 @@ html {
     return `${num}px`;
   }};
 }
+
+  *,
+  *::after,
+  *::before { 
+    box-sizing: inherit;
+    }
+
+  body {
+    box-sizing: border-box; 
+    margin: 0;
+    /* font-family: Cabin, 'Open Sans', sans-serif; */
+    font-display: swap;
+    font-display: fallback;
+    overflow-x: hidden;
+  }
 `;

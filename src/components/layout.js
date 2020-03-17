@@ -1,28 +1,13 @@
 import React, { useEffect } from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
+import { ResetStyle, GlobalStyle } from '../Style/globalStyle';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/special.css';
+import '../style/special.css';
 import PropTypes from 'prop-types';
 import { ScrollingProvider } from 'react-scroll-section';
 import config from 'react-reveal/globals';
 import colors from '../../colors';
-
-const GlobalStyle = createGlobalStyle`
-  *,
-  *::after,
-  *::before { 
-    box-sizing: inherit;
-    }
-
-  body {
-    box-sizing: border-box; 
-    margin: 0;
-    font-family: Cabin, 'Open Sans', sans-serif;
-    font-display: swap;
-    font-display: fallback;
-    overflow-x: hidden;
-  }
-`;
+import myTheme from '../style/myTheme';
 
 config({ ssrFadeout: true });
 
@@ -41,8 +26,8 @@ const Layout = ({ children }) => {
 
   return (
     <main>
-      <GlobalStyle />
-      <ThemeProvider theme={{ colors }}>
+      <ThemeProvider theme={myTheme}>
+        <GlobalStyle />
         <ScrollingProvider>{children}</ScrollingProvider>
       </ThemeProvider>
     </main>

@@ -19,11 +19,17 @@ export const Card = styled(CardRebass).attrs({
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
   }
 
+ h5{
+  margin-bottom:10px;
+  font-size:22px;
+  }
+
   ul {
     padding-left: 10px;
     list-style-type: none;
     li {
-      font-size: 0.8em;
+      font-size: 1em;
+      line-height:2em;
     }
   }
 `;

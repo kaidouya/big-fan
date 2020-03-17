@@ -14,21 +14,21 @@ import WritingContent from '../components/WritingTable';
 const Background = () => (
   <div>
     <Triangle
-      color="backgroundDark"
+      color="fourColor"
       height={['15vh', '10vh']}
       width={['100vw', '100vw']}
       invertX
     />
 
     <Triangle
-      color="secondary"
+      color="fiveColor"
       height={['50vh', '40vh']}
       width={['70vw', '40vw']}
       invertY
     />
 
     <Triangle
-      color="primaryDark"
+      color="tertiaryColor"
       height={['40vh', '15vh']}
       width={['100vw', '100vw']}
       invertX
@@ -42,7 +42,7 @@ const EllipsisHeading = styled.h5`
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   text-overflow: ellipsis;
-  border-bottom: ${props => props.theme.colors.primary} 5px solid;
+  border-bottom: ${props => props.theme.greenTheme.tertiaryColor} 4px solid;
   overflow: hidden;
 `;
 

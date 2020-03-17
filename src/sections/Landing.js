@@ -9,27 +9,31 @@ import Triangle from '../components/Triangle';
 
 const Background = () => (
   <div>
+    {/* 左上角２ */}
     <Triangle
-      color="backgroundDark"
+      color="primaryColor"
       height={['35vh', '80vh']}
       width={['95vw', '60vw']}
     />
 
+    {/* 左上角 */}
     <Triangle
-      color="secondary"
+      color="tertiaryColor"
       height={['38vh', '80vh']}
       width={['50vw', '35vw']}
     />
 
+    {/* 右上角 */}
     <Triangle
-      color="primaryDark"
+      color="secondaryColor"
       height={['25vh', '35vh']}
       width={['75vw', '60vw']}
       invertX
     />
 
+    {/* 右下角 */}
     <Triangle
-      color="backgroundDark"
+      color="primaryColor"
       height={['20vh', '20vh']}
       width={['100vw', '100vw']}
       invertX
@@ -41,10 +45,41 @@ const Background = () => (
 const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' };
 
 const roles = [
-  'Quick setup 🚀',
-  'Responsive 📱',
-  'PWA ✨',
-  'Contentful CMS 🔧',
+  '高性能、高品質 🚀',
+  '節能傳動科技為主軸 📱',
+  '多功能驅動器 ✨',
+  '永續經營的服務 🔧',
+];
+
+const socialLinks = [
+  {
+    id: 'github',
+    name: 'github',
+    url: '',
+    color: '',
+    fontAwesomeIcon: '',
+  },
+  {
+    id: 'medium',
+    name: 'medium',
+    url: '',
+    color: '',
+    fontAwesomeIcon: '',
+  },
+  {
+    id: 'mail',
+    name: 'mail',
+    url: '',
+    color: '',
+    fontAwesomeIcon: '',
+  },
+  {
+    id: 'twitter',
+    name: 'twitter',
+    url: '',
+    color: '',
+    fontAwesomeIcon: '',
+  },
 ];
 
 const LandingPage = () => (
@@ -77,11 +112,11 @@ const LandingPage = () => (
     </Heading>
 
     <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
-      {/* {socialLinks.map(({ id, ...rest }) => (
-          <Box mx={3} fontSize={[5, 6, 6]} key={id}>
-            <SocialLink {...rest} />
-          </Box>
-        ))} */}
+      {socialLinks.map(({ id, ...rest }) => (
+        <Box mx={3} fontSize={[5, 6, 6]} key={id}>
+          <SocialLink {...rest} />
+        </Box>
+      ))}
     </Flex>
     <SectionLink section="about">
       {({ onClick }) => <MouseIcon onClick={onClick} />}

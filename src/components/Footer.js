@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 const FooterContainer = styled.footer`
   padding: 16px;
-  background: ${props => props.theme.colors.primaryDark};
+  background: ${props => props.theme.greenTheme.tertiaryColor};
   > div:first-child {
     min-width: 320px;
     max-width: 1366px;
@@ -19,15 +19,15 @@ const FooterContainer = styled.footer`
 `;
 
 const TextFooter = styled(Text)`
-  color: ${props => props.theme.colors.background};
+  color: ${props => props.theme.greenTheme.secondFontColor};
 
   & a {
-    color: ${props => props.theme.colors.background};
+    color: ${props => props.theme.greenTheme.secondFontColor};
   }
 `;
 
 const Footer = () => (
-  <FooterContainer p={3} backgroundColor="primaryDark" as="footer">
+  <FooterContainer p={3} as="footer">
     <div>
       <Fade left>
         <TextFooter fontSize={[2, 3]}>
@@ -37,7 +37,7 @@ const Footer = () => (
         </TextFooter>
       </Fade>
       <Flex>
-        <Fade right>test</Fade>
+        <Fade right></Fade>
       </Flex>
     </div>
   </FooterContainer>

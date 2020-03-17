@@ -5,8 +5,9 @@ const myTheme = {
     tertiaryColor: '#125270',
     fourColor: '#4d876b',
     fiveColor: '#0d2136',
-    baseFontColor: '#000',
-    baseFontSize: 14,
+    baseFontColor: '#003564',
+    secondFontColor: '#fff',
+    baseFontSize: 16,
   }
 };
 

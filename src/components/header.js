@@ -9,7 +9,9 @@ import Logo from '../images/Portfolio.svg';
 
 const HeaderContainer = styled(Headroom)`
   .headroom--pinned {
-    background: ${props => props.theme.colors.primaryDark};
+    background: ${props => {
+    return props.theme.greenTheme.tertiaryColor
+  }};
   }
 
   position: absolute;
@@ -22,13 +24,13 @@ const formatLinks = allLinks =>
       const isHome = key === 'home';
       return isHome
         ? {
-            ...acc,
-            home: value,
-          }
+          ...acc,
+          home: value,
+        }
         : {
-            ...acc,
-            links: [...acc.links, { name: key, value }],
-          };
+          ...acc,
+          links: [...acc.links, { name: key, value }],
+        };
     },
     { links: [], home: null }
   );
