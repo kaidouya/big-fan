@@ -45,7 +45,6 @@ const CustomLabel = styled.div`
     bottom: -1px;
     margin: 0px;
     padding: 10px 10px 10px 20px;
-    /* background-color: rgb(124, 55, 173); */
     background:${props => props.theme.greenTheme.tertiaryColor};
     color: white;
     font-size: 1em;

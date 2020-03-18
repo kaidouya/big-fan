@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyle } from '../Style/globalStyle';
+import { GlobalStyle } from '../style/globalStyle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/special.css';
 import PropTypes from 'prop-types';

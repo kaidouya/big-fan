@@ -81,23 +81,18 @@ button {
  */
 export const GlobalStyle = createGlobalStyle`
 html {
-    color:${props => props.theme.greenTheme.baseFontColor}; 
     font-size: ${props => {
     const num = parseInt(props.theme.greenTheme.baseFontSize, 10);
     return `${num}px`;
   }};
+   font-family:${props => props.theme.greenTheme.baseFontFamily}; 
 }
 
-  *,
-  *::after,
-  *::before { 
-    box-sizing: inherit;
-    }
-
-  body {
-    box-sizing: border-box; 
+  body { 
     margin: 0;
-    /* font-family: Cabin, 'Open Sans', sans-serif; */
     overflow-x: hidden;
+    color:${props => props.theme.greenTheme.baseFontColor}; 
+    font-family:${props => props.theme.greenTheme.baseFontFamily}; 
   }
+
 `;

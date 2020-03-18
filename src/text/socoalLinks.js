@@ -2,7 +2,7 @@ export const socialLinks = [
   {
     id: 'line',
     name: 'line',
-    url: '',
+    url: 'https://www.google.com/',
     color: '',
     target: '_blank',
     prefix: 'fab',
@@ -13,7 +13,7 @@ export const socialLinks = [
   {
     id: 'wechat',
     name: 'wechat',
-    url: '',
+    url: 'https://www.google.com/',
     color: '',
     target: '_blank',
     prefix: 'fab',
