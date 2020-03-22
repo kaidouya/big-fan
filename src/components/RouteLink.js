@@ -5,11 +5,11 @@ import styled from 'styled-components';
 
 const Box = styled.div`
   color: ${props => props.theme.greenTheme.secondFontColor};
-  font-size: 16px;
+  font-size: 14px;
   margin: 0px 0px 0px 8px;
-  @media screen and (min-width: 40em) {
-    margin-left: 16px;
-    font-size: 20px;
+  @media(min-width:1024px){
+    margin-left:20px;
+    font-size:20px;
   }
 `;
 

@@ -18,6 +18,15 @@ const HeaderContainer = styled(Headroom)`
   width: 100%;
 `;
 
+const Nav = styled.nav`
+  display:flex;
+  min-width: 0;
+  margin: 0;
+  @media(min-width:1280px){
+    margin-right:32px;
+  }
+`
+
 const formatLinks = allLinks =>
   Object.entries(allLinks).reduce(
     (acc, [key, value]) => {
@@ -71,7 +80,7 @@ const Header = () => (
             return (
               <Fragment>
                 {homeLink}
-                <Flex mr={[0, 3, 5]}>{navLinks}</Flex>
+                <Nav>{navLinks}</Nav>
               </Fragment>
             );
           }}

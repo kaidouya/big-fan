@@ -7,7 +7,7 @@ export const socialLinks = [
     target: '_blank',
     prefix: 'fab',
     interactive: false,
-    animation: 'scale',
+    animation: 'perspective',
     fontAwesomeIconType: 'line',
   },
   {
@@ -18,7 +18,7 @@ export const socialLinks = [
     target: '_blank',
     prefix: 'fab',
     interactive: false,
-    animation: 'fade',
+    animation: 'perspective',
     fontAwesomeIconType: 'weixin',
   },
   {
@@ -29,7 +29,7 @@ export const socialLinks = [
     target: '_blank',
     prefix: 'fab',
     interactive: false,
-    animation: 'shift',
+    animation: 'perspective',
     fontAwesomeIconType: 'skype',
   },
   {
