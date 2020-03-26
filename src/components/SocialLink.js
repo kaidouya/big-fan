@@ -39,7 +39,7 @@ const SocialLink = ({ name, url, color, target, prefix, interactive, animation, 
 )
 
 SocialLink.propTypes = {
-  fontAwesomeIcon: PropTypes.string.isRequired,
+  fontAwesomeIcon: PropTypes.string,
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   color: PropTypes.string,
